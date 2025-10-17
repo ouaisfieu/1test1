@@ -1,0 +1,85 @@
+title: "1test1 · ouaisfi.eu"
+description: "Documentation technique du projet ouaisfi.eu"
+theme: just-the-docs
+
+url: "https://dl.ouaisfi.eu/1test1/"
+baseurl: "" # important pour GitHub Pages
+
+
+
+# Paramètres du thème
+search_enabled: true
+logo: "/assets/images/logo.png"
+
+# Mode sombre / clair
+color_scheme: light
+
+# Affiche un bouton pour basculer entre clair / sombre
+enable_color_scheme_toggle: true
+
+
+
+favicon_ico: "/favicon-96x96.png"
+
+# Navigation
+aux_links:
+  "Voir sur GitHub":
+    - "https://github.com/ouaisfieu/tech"
+
+aux_links:
+  Template Repository: https://github.com/just-the-docs/just-the-docs-template
+
+aux_links:
+  ouaisfi.eu: https://ouaisfieu.github.io/
+
+nav:
+  - title: Notions
+    url: /notions/
+
+
+
+search_enabled: true
+
+
+
+collections:
+  notions:
+    output: true
+  dossiers:               # ← Ajout de la collection
+    output: true          # ← Très important pour générer les pages HTML
+  belgique:                  # ← nom de la collection (tu peux mettre "myspot" si tu préfères)
+    output: true             # ← pour générer les pages HTML
+    permalink: /belgique/:path/  # ← structure des URL
+    sort_by: title           # ← optionnel, trie par titre
+  et-vous:
+    output: true
+    # permalink: /et-vous/:path/  # ← structure des URL
+    
+just_the_docs:
+  collections:
+    notions:
+      name: ⚙️ MENU
+      nav_fold: false
+    dossiers:             # ← Même structure pour dossiers
+      name: 🟩 Dossiers      # ← Nom affiché dans la navigation
+      nav_fold: true     # ← Mettre true si tu veux un repliement dans le menu
+    belgique:
+      name: 🟦 BELGIQUE       # ← titre dans le menu de navigation
+      nav_fold: true         # ← false = tout est affiché dans le menu, true = replié
+    et-vous:
+      name: 🟥 ET QUOI ?
+      nav_fold: true
+
+
+back_to_top: true
+back_to_top_text: "↑ Haut de page"
+
+
+sass:
+  style: compressed
+
+
+
+
+
+
